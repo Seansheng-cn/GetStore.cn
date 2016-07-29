@@ -1,0 +1,9 @@
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\bin\Release\GODInventory.MyLinq.dll.config
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\bin\Release\GODInventory.MyLinq.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\bin\Release\GODInventory.MyLinq.pdb
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\bin\Release\EntityFramework.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\bin\Release\MySql.Data.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\bin\Release\MySql.Data.Entity.EF6.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\bin\Release\EntityFramework.xml
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\obj\Release\GODInventory.MyLinq.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.MyLinq\obj\Release\GODInventory.MyLinq.pdb

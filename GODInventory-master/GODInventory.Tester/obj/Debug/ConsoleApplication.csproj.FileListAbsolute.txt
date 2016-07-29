@@ -1,0 +1,16 @@
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\ConsoleApplication.exe
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\ConsoleApplication.pdb
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\obj\Debug\ConsoleApplication.exe
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\obj\Debug\ConsoleApplication.pdb
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\ConsoleApplication.exe.config
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\CommonLibrary.dll
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\FluentNHibernate.dll
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\Iesi.Collections.dll
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\NHibernate.dll
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\FluentNHibernate.pdb
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\FluentNHibernate.xml
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\Iesi.Collections.xml
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\NHibernate.xml
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\MySql.Data.dll
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\obj\Debug\ConsoleApplication.csprojResolveAssemblyReference.cache
+D:\用户目录\我的文档\Visual Studio 2015\Projects\GODInventory\ConsoleApplication\bin\Debug\GODInventory.Console.exe.config

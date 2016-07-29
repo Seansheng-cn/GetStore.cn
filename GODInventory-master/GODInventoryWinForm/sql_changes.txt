@@ -1,0 +1,58 @@
+﻿-- SQL
+------------------------------------------------------------------
+CREATE TABLE `god_inventory`.`t_edidata` (
+  `Id` INT NOT NULL AUTO_INCREMENT,
+  `データID` VARCHAR(12) NOT NULL, -- 0 AH1, 1 CH1, 2 CH2
+  `管理連番` BIGINT(20) NOT NULL DEFAULT 0,
+  `レコード件数` INT NOT NULL DEFAULT 0,
+  `created_at` DATETIME NULL,
+  `is_sent` TINYINT(1) NOT NULL DEFAULT 0,
+  `sent_at` DATETIME NULL,
+  `is_printed` TINYINT(1) NOT NULL DEFAULT 0,
+  `printed_at` DATETIME NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC));
+------------------------------------------------------------------
+ALTER TABLE `god_inventory`.`t_orderdata` 
+CHANGE COLUMN `ジャンル` `ジャンル` INT(3) NULL ,
+CHANGE COLUMN `ＪＡＮコード` `ＪＡＮコード` BIGINT(20) NOT NULL DEFAULT 0;
+
+-- t_orderdata.ジャンル  int(3)      // same as t_itemlist
+-- t_itemlist.JANコード  bigint(20)  // same as t_orderdata
+-- t_itemlist.JANコード  default 0   // or pending sql join would not work.
+UPDATE `god_inventory`.`t_itemlist` SET `JANコード`='0' WHERE `自社コード`='130001';
+UPDATE `god_inventory`.`t_itemlist` SET `JANコード`='0' WHERE `自社コード`='130002';
+UPDATE `god_inventory`.`t_itemlist` SET `JANコード`='0' WHERE `自社コード`='130004';
+UPDATE `god_inventory`.`t_itemlist` SET `JANコード`='0' WHERE `自社コード`='130005';
+
+
+-------------------------------------------------------------------
+ALTER TABLE `god_inventory`.`t_orderdata` 
+ADD COLUMN `ASN管理連番` BIGINT(20) NOT NULL DEFAULT 0 AFTER `センター名カナ`;
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+CHANGE COLUMN `オプション使用欄` `オプション使用欄` VARCHAR(255) NULL DEFAULT NULL ;
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+CHANGE COLUMN `在庫状態` `在庫状態` VARCHAR(255) CHARACTER SET 'utf8' NULL DEFAULT NULL;
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+ADD COLUMN `自社コード` INT(11) UNSIGNED NOT NULL AFTER `ASN管理連番`;
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+ADD COLUMN `出荷No` bigint(20) UNSIGNED NOT NULL DEFAULT 0 AFTER `ASN管理連番`;
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+ADD COLUMN `Status` INT(4) UNSIGNED NOT NULL DEFAULT 0 AFTER `自社コード`;
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+ADD INDEX `t_orderdata_status` USING BTREE (`Status` ASC);
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+ADD COLUMN `県別` VARCHAR(45) NULL AFTER `Status`;
+
+
+ALTER TABLE `god_inventory`.`t_orderdata` 
+ADD INDEX `t_orderdata_combo` (`Status` ASC, `実際配送担当` ASC, `県別` ASC, `店舗コード` ASC, `ＪＡＮコード` ASC, `受注日` ASC, `伝票番号` ASC);
+
+-------------------------------------------------------------------

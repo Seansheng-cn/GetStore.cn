@@ -1,0 +1,63 @@
+2016-06-23 15:14:19,431 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,431 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,431 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,459 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Price as Price0_0_ FROM products this_
+2016-06-23 15:14:19,459 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Price as Price0_0_ FROM products this_
+2016-06-23 15:14:19,459 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Price as Price0_0_ FROM products this_
+2016-06-23 15:14:19,476 [10] DEBUG NHibernate.SQL - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Price as Price0_0_ FROM products this_
+2016-06-23 15:14:19,476 [10] DEBUG NHibernate.SQL - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Price as Price0_0_ FROM products this_
+2016-06-23 15:14:19,476 [10] DEBUG NHibernate.SQL - SELECT this_.Id as Id0_0_, this_.Name as Name0_0_, this_.Price as Price0_0_ FROM products this_
+2016-06-23 15:14:19,486 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 3 ms
+2016-06-23 15:14:19,486 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 3 ms
+2016-06-23 15:14:19,486 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 3 ms
+2016-06-23 15:14:19,493 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-23 15:14:19,493 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-23 15:14:19,493 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-23 15:14:19,543 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-23 15:14:19,543 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-23 15:14:19,543 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-23 15:14:19,543 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 61 ms
+2016-06-23 15:14:19,543 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 61 ms
+2016-06-23 15:14:19,543 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 61 ms
+2016-06-23 15:14:19,544 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,544 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,544 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,726 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,726 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,726 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,726 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO products (Name, Price) VALUES (?, ?)
+2016-06-23 15:14:19,726 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO products (Name, Price) VALUES (?, ?)
+2016-06-23 15:14:19,726 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: INSERT INTO products (Name, Price) VALUES (?, ?)
+2016-06-23 15:14:19,738 [10] DEBUG NHibernate.SQL - INSERT INTO products (Name, Price) VALUES (?p0, ?p1);?p0 = 'Fish' [Type: String (4)], ?p1 = 4.49 [Type: Double (0)]
+2016-06-23 15:14:19,738 [10] DEBUG NHibernate.SQL - INSERT INTO products (Name, Price) VALUES (?p0, ?p1);?p0 = 'Fish' [Type: String (4)], ?p1 = 4.49 [Type: Double (0)]
+2016-06-23 15:14:19,738 [10] DEBUG NHibernate.SQL - INSERT INTO products (Name, Price) VALUES (?p0, ?p1);?p0 = 'Fish' [Type: String (4)], ?p1 = 4.49 [Type: Double (0)]
+2016-06-23 15:14:19,838 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 99 ms
+2016-06-23 15:14:19,838 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 99 ms
+2016-06-23 15:14:19,838 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteNonQuery took 99 ms
+2016-06-23 15:14:19,839 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,839 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,839 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT LAST_INSERT_ID()
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT LAST_INSERT_ID()
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT LAST_INSERT_ID()
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.SQL - SELECT LAST_INSERT_ID()
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.SQL - SELECT LAST_INSERT_ID()
+2016-06-23 15:14:19,841 [10] DEBUG NHibernate.SQL - SELECT LAST_INSERT_ID()
+2016-06-23 15:14:19,843 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2016-06-23 15:14:19,843 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2016-06-23 15:14:19,843 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 0 ms
+2016-06-23 15:14:19,843 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-23 15:14:19,843 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-23 15:14:19,843 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 5 ms
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 5 ms
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 5 ms
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-23 15:14:19,847 [10] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0

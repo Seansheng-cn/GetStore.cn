@@ -1,0 +1,71 @@
+2016-07-24 19:44:55,393 [9] ERROR logerror [(null)] <(null)>
+ - DB open error
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 GODInventoryWinForm.Program.DbConnectable() 位置 d:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventoryWinForm\Program.cs:行号 60
+2016-07-24 19:44:55,438 [9] INFO  loginfo [(null)] <(null)>
+ - DB connection string is server=localhost;user id=root;database=god_inventory;allowuservariables=True;characterset=utf8
+2016-07-25 15:37:35,613 [9] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 17:20:14,809 [8] ERROR logerror [(null)] <(null)>
+ - DB open error
+MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Reading from the stream has failed. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed. ---> System.IO.IOException: 无法从传输连接中读取数据: 您的主机中的软件中止了一个已建立的连接。。 ---> System.Net.Sockets.SocketException: 您的主机中的软件中止了一个已建立的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 MySql.Data.Common.MyNetworkStream.HandleOrRethrowException(Exception e)
+   在 MySql.Data.Common.MyNetworkStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   在 System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   在 MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   在 MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   在 MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 GODInventoryWinForm.Program.DbConnectable() 位置 d:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventoryWinForm\Program.cs:行号 61
+2016-07-25 17:20:15,368 [8] INFO  loginfo [(null)] <(null)>
+ - DB connection string is server=localhost;user id=root;database=god_inventory;allowuservariables=True;characterset=utf8
+2016-07-25 17:21:54,572 [10] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 18:19:40,504 [9] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 18:25:30,905 [10] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 18:38:17,080 [10] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 19:24:23,771 [11] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 19:29:14,823 [9] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 21:11:09,682 [1] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 21:27:16,025 [1] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-25 21:28:12,903 [1] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-26 09:39:14,273 [10] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-26 09:44:05,241 [10] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory
+2016-07-26 09:51:57,879 [10] INFO  loginfo [(null)] <(null)>
+ - Start application GodInventory

@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7101444A-CF5A-4F1B-B7E6-E75CD5E50449}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GODInventoryWinForm</RootNamespace>
+    <AssemblyName>InventoryDemoV1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\项目\在庫管理\Phase1\Publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GODInventoryWinForm.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>411AEC498F6500D3F448B51627FCB0DDF44DFF79</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>GODInventoryWinForm_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="DBConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBConfigurationForm.Designer.cs">
+      <DependentUpon>DBConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NewOrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\NewOrdersForm.Designer.cs">
+      <DependentUpon>NewOrdersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrderFormControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OrderFormControl.Designer.cs">
+      <DependentUpon>OrderFormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrderHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\OrderHistoryForm.Designer.cs">
+      <DependentUpon>OrderHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrdersWithFormControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OrdersWithFormControl.Designer.cs">
+      <DependentUpon>OrdersWithFormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Pager.Designer.cs">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PendingOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\PendingOrderForm.Designer.cs">
+      <DependentUpon>PendingOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ReceivedOrdersReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ReceivedOrdersReportForm.Designer.cs">
+      <DependentUpon>ReceivedOrdersReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShipingInfoConfirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ShipingInfoConfirmForm.Designer.cs">
+      <DependentUpon>ShipingInfoConfirmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ShippingOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\ShippingOrderForm.Designer.cs">
+      <DependentUpon>ShippingOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\StoresControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\StoresControl.Designer.cs">
+      <DependentUpon>StoresControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrdersControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\OrdersControl.Designer.cs">
+      <DependentUpon>OrdersControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ProductsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ProductsControl.Designer.cs">
+      <DependentUpon>ProductsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WaitToShipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\WaitToShipForm.Designer.cs">
+      <DependentUpon>WaitToShipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WarehouseControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\WarehouseControl.Designer.cs">
+      <DependentUpon>WarehouseControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateASNTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateASNTextForm.Designer.cs">
+      <DependentUpon>GenerateASNTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportReceivedTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportReceivedTextForm.Designer.cs">
+      <DependentUpon>ImportReceivedTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportOrderTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportOrderTextForm.Designer.cs">
+      <DependentUpon>ImportOrderTextForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MainControl.Designer.cs">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\OrderCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\OrderCheckForm.Designer.cs">
+      <DependentUpon>OrderCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceiveForm.Designer.cs">
+      <DependentUpon>ReceiveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendForm.Designer.cs">
+      <DependentUpon>SendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerArgument.cs" />
+    <EmbeddedResource Include="DBConfigurationForm.resx">
+      <DependentUpon>DBConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NewOrdersForm.resx">
+      <DependentUpon>NewOrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OrderFormControl.resx">
+      <DependentUpon>OrderFormControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OrderHistoryForm.resx">
+      <DependentUpon>OrderHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OrdersWithFormControl.resx">
+      <DependentUpon>OrdersWithFormControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Pager.resx">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PendingOrderForm.resx">
+      <DependentUpon>PendingOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ReceivedOrdersReportForm.resx">
+      <DependentUpon>ReceivedOrdersReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ShipingInfoConfirmForm.resx">
+      <DependentUpon>ShipingInfoConfirmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ShippingOrderForm.resx">
+      <DependentUpon>ShippingOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\StoresControl.resx">
+      <DependentUpon>StoresControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MainControl.resx">
+      <DependentUpon>MainControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\OrdersControl.resx">
+      <DependentUpon>OrdersControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ProductsControl.resx">
+      <DependentUpon>ProductsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WaitToShipForm.resx">
+      <DependentUpon>WaitToShipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\WarehouseControl.resx">
+      <DependentUpon>WarehouseControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateASNTextForm.resx">
+      <DependentUpon>GenerateASNTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportReceivedTextForm.resx">
+      <DependentUpon>ImportReceivedTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportOrderTextForm.resx">
+      <DependentUpon>ImportOrderTextForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controls\OrderCheckForm.resx">
+      <DependentUpon>OrderCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceiveForm.resx">
+      <DependentUpon>ReceiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OrderTemplateReport.rdlc" />
+    <EmbeddedResource Include="Reports\ReceivedOrderDetailReport.rdlc" />
+    <EmbeddedResource Include="Reports\ReceivedOrderReport.rdlc" />
+    <EmbeddedResource Include="Reports\ReceivedOrderCollectionReport.rdlc" />
+    <EmbeddedResource Include="SendForm.resx">
+      <DependentUpon>SendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GODInventoryWinForm_TemporaryKey.pfx" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\GODInventory.MyLinq.t_orderdata.datasource" />
+    <None Include="Properties\DataSources\GODInventory.MyLinq.t_shoplist.datasource" />
+    <None Include="Properties\DataSources\GODInventory.MyLinq.v_pendingorder.datasource" />
+    <None Include="Properties\DataSources\GODInventory.ViewModel.EDI.ReceivedOrderReportModel1.datasource" />
+    <None Include="Properties\DataSources\GODInventory.ViewModel.EDI.ReceivedOrdersReportModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GODInventory.MyLinq\GODInventory.MyLinq.csproj">
+      <Project>{ffc241ed-fd21-4af1-9b53-a57422bf2f6b}</Project>
+      <Name>GODInventory.MyLinq</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GODInventory.ViewModel\GODInventory.ViewModel.csproj">
+      <Project>{1d5ddab1-0b38-4bbd-9130-11ba301a7cfc}</Project>
+      <Name>GODInventory.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstRecord_small.png" />
+    <None Include="Resources\LastRecord_small.png" />
+    <None Include="Resources\NextRecord_small.png" />
+    <None Include="Resources\PreviousRecord_small.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\dashboard1.png" />
+    <Content Include="Resources\order.png" />
+    <None Include="Resources\order1.png" />
+    <Content Include="Resources\product.png" />
+    <None Include="Resources\product1.png" />
+    <Content Include="Resources\setting.png" />
+    <None Include="Resources\setting1.png" />
+    <Content Include="Resources\store.png" />
+    <None Include="Resources\store1.png" />
+    <None Include="Resources\tool1.png" />
+    <Content Include="Resources\tools.png" />
+    <Content Include="Resources\warehouse.png" />
+    <None Include="Resources\warehouse1.png" />
+    <Content Include="sql_changes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

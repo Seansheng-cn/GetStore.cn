@@ -1,0 +1,17 @@
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\GODInventory.ViewModel.dll.config
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\GODInventory.ViewModel.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\GODInventory.ViewModel.pdb
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\EntityFramework.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\EntityFramework.SqlServer.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\GODInventory.MyLinq.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\MySql.Data.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\MySql.Data.Entity.EF6.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\GODInventory.MyLinq.pdb
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\EntityFramework.xml
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\bin\Release\EntityFramework.SqlServer.xml
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\obj\Release\GODInventory.ViewModel.csprojResolveAssemblyReference.cache
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\obj\Release\GODInventory.ViewModel.g.resources
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\obj\Release\GODInventory.ViewModel.Properties.Resources.resources
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\obj\Release\GODInventory.ViewModel.csproj.GenerateResource.Cache
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\obj\Release\GODInventory.ViewModel.dll
+D:\用户目录\我的文档\Visual Studio 2012\Projects\GODInventory10\GODInventory.ViewModel\obj\Release\GODInventory.ViewModel.pdb

@@ -1,0 +1,24 @@
+2016-06-25 18:24:24,552 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-25 18:24:24,552 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-25 18:24:24,552 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened new IDbCommand, open IDbCommands: 1
+2016-06-25 18:24:24,578 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.自社コード as 自社コード2_0_, this_.商品名 as 商品名2_0_, this_.ジャンル as ジャンル2_0_, this_.規格 as 規格2_0_, this_.PT入数 as PT入数2_0_, this_.インストアコード as インストアコード2_0_, this_.仕入原価 as 仕入原価2_0_, this_.単価 as 単価2_0_, this_.売価 as 売価2_0_ FROM t_itemlist this_
+2016-06-25 18:24:24,578 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.自社コード as 自社コード2_0_, this_.商品名 as 商品名2_0_, this_.ジャンル as ジャンル2_0_, this_.規格 as 規格2_0_, this_.PT入数 as PT入数2_0_, this_.インストアコード as インストアコード2_0_, this_.仕入原価 as 仕入原価2_0_, this_.単価 as 単価2_0_, this_.売価 as 売価2_0_ FROM t_itemlist this_
+2016-06-25 18:24:24,578 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Building an IDbCommand object for the SqlString: SELECT this_.自社コード as 自社コード2_0_, this_.商品名 as 商品名2_0_, this_.ジャンル as ジャンル2_0_, this_.規格 as 規格2_0_, this_.PT入数 as PT入数2_0_, this_.インストアコード as インストアコード2_0_, this_.仕入原価 as 仕入原価2_0_, this_.単価 as 単価2_0_, this_.売価 as 売価2_0_ FROM t_itemlist this_
+2016-06-25 18:24:24,595 [11] DEBUG NHibernate.SQL - SELECT this_.自社コード as 自社コード2_0_, this_.商品名 as 商品名2_0_, this_.ジャンル as ジャンル2_0_, this_.規格 as 規格2_0_, this_.PT入数 as PT入数2_0_, this_.インストアコード as インストアコード2_0_, this_.仕入原価 as 仕入原価2_0_, this_.単価 as 単価2_0_, this_.売価 as 売価2_0_ FROM t_itemlist this_
+2016-06-25 18:24:24,595 [11] DEBUG NHibernate.SQL - SELECT this_.自社コード as 自社コード2_0_, this_.商品名 as 商品名2_0_, this_.ジャンル as ジャンル2_0_, this_.規格 as 規格2_0_, this_.PT入数 as PT入数2_0_, this_.インストアコード as インストアコード2_0_, this_.仕入原価 as 仕入原価2_0_, this_.単価 as 単価2_0_, this_.売価 as 売価2_0_ FROM t_itemlist this_
+2016-06-25 18:24:24,595 [11] DEBUG NHibernate.SQL - SELECT this_.自社コード as 自社コード2_0_, this_.商品名 as 商品名2_0_, this_.ジャンル as ジャンル2_0_, this_.規格 as 規格2_0_, this_.PT入数 as PT入数2_0_, this_.インストアコード as インストアコード2_0_, this_.仕入原価 as 仕入原価2_0_, this_.単価 as 単価2_0_, this_.売価 as 売価2_0_ FROM t_itemlist this_
+2016-06-25 18:24:24,649 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 42 ms
+2016-06-25 18:24:24,649 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 42 ms
+2016-06-25 18:24:24,649 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - ExecuteReader took 42 ms
+2016-06-25 18:24:24,656 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-25 18:24:24,656 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-25 18:24:24,656 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Opened IDataReader, open IDataReaders: 1
+2016-06-25 18:24:24,727 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-25 18:24:24,727 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-25 18:24:24,727 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDataReader, open IDataReaders :0
+2016-06-25 18:24:24,727 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 121 ms
+2016-06-25 18:24:24,727 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 121 ms
+2016-06-25 18:24:24,727 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - DataReader was closed after 121 ms
+2016-06-25 18:24:24,729 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-25 18:24:24,729 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
+2016-06-25 18:24:24,729 [11] DEBUG NHibernate.AdoNet.AbstractBatcher - Closed IDbCommand, open IDbCommands: 0
